@@ -1,6 +1,6 @@
 # Name: Trey Owen
 # Date: July 2017
-
+# SAVY Project
 # 01: A Simple Program
 # This program asks the user for his/her name and age.
 
@@ -23,7 +23,6 @@ a = int(raw_input("Please tell me your age: "))
 #elif z == "no":
 #    c = int(a)
 #else:
-
 
 
 # Get new name
