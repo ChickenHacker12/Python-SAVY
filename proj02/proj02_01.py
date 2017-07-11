@@ -1,5 +1,7 @@
-# Name:
-# Date:
+import random
+
+# Name: Trey Owen
+# Date: July 2017
 
 # proj02: sum
 
@@ -17,3 +19,32 @@
 # Enter a number to sum, or 0 to indicate you are finished: 10
 # Enter a number to sum, or 0 to indicate you are finished: 0
 #The sum of your numbers is: 21
+
+# Introduction
+print ""
+a = raw_input("Welcome to the Number Game!\nPress ENTER")
+a = raw_input("The goal is to chose random numbers, and when you are done, guess the sum of them.\nPress ENTER")
+print " "
+name = raw_input("Please enter a username: ")
+print " "
+print "Welcome, " + name + "!"
+print ""
+
+# Test loop
+loop_control = True
+total = 0
+
+
+while loop_control == True:
+    num = int(raw_input("Enter a number (enter 0 to end game): "))
+    if num > 0:
+        num = raw_input("Enter a number (enter 0 to end game): ")
+    else:
+
+        if num < 1:
+            loop_control = False
+            print ""
+            print "Game over."
+            guess = raw_input("What is your guess: ")
+            total = num + 
+            print name, ", the correct answer is", total, "."
