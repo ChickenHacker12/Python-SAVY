@@ -1,3 +1,6 @@
+import random
+
+
 # Name: Trey Owen
 # Date: July 2017
 # SAVY Project
@@ -8,7 +11,7 @@ print " "
 print "Welcome to Age Calculator! Last updated July 2017. \nBy Trey Owen"
 print " "
 t = raw_input("You need to answer a few questions in order to continue.\nPress ENTER")
-c = 0
+c = int(0)
 # Name
 print " "
 n = raw_input("Please tell me your first name: ")
@@ -17,15 +20,15 @@ n = raw_input("Please tell me your first name: ")
 a = int(raw_input("Please tell me your age: "))
 
 # Have you had a birthday yet this year?
-#z = raw_input("Have you had a birthday yet this year (yes or no):")
-#if z == "yes":
-#c = int(a) + 1
-#elif z == "no":
-#    c = int(a)
-#else:
+z = raw_input("Have you had a birthday yet this year (yes or no):")
+if z == "yes":
+    c = 99
+elif z == "no":
+    c = 100
+else:
 
 
-# Get new name
+
 my_str1 = str(n)
 my_str2 = my_str1[0]
 my_str3 = my_str2.upper()
@@ -40,10 +43,14 @@ print "Welcome, " + my_str7 + "!"
 # Tell the age
 print " "
 print m + " will be 100 years old in the year:"
-print (100 - int(a)) + 2017
+print (c - int(a)) + 2017
 
 print m + " was born around the year:"
 print 2017 - int(a)
+
+print m + "'s random number:"
+r = random.randit(0,10)
+print r
 
 # a = age before b-day
 # n = name before m
