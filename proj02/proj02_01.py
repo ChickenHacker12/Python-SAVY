@@ -37,8 +37,10 @@ total = 0
 
 while loop_control == True:
     num = int(raw_input("Enter a number (enter 0 to end game): "))
+    total = total + int(num)
     if num > 0:
         num = raw_input("Enter a number (enter 0 to end game): ")
+        total = total + int(num)
     else:
 
         if num < 1:
@@ -46,5 +48,8 @@ while loop_control == True:
             print ""
             print "Game over."
             guess = raw_input("What is your guess: ")
-            total = num + 
-            print name, ", the correct answer is", total, "."
+
+            print name,", the correct answer is", total,"."
+            print ""
+            print "Thanks for playing!"
+
