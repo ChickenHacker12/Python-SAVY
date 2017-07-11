@@ -19,9 +19,17 @@ print ""
 numbers = 0
 loop = True
 # numbers
-prev = 0
-next = 0
-while loop == True
 
-numbers = raw_input("To generate numbers, enter the amount of numbers you need (1+): ")
-if numbers > 1:
+prev = 0
+next = 1
+
+numbers = int(raw_input("To generate numbers, enter the amount of numbers you need (1+): "))
+while loop == True:
+    if numbers > 1:
+            next2 = (next + next)
+            print next2
+            prev = 2
+            next = 3
+            print prev + next,","
+    else:
+        print "[Error] That was done incorrectly."
