@@ -17,6 +17,11 @@ print ""
 
 # Generator
 numbers = 0
+loop = True
+# numbers
+prev = 0
+next = 0
+while loop == True
+
 numbers = raw_input("To generate numbers, enter the amount of numbers you need (1+): ")
 if numbers > 1:
-    print int(numbers)*1
