@@ -1,19 +1,36 @@
-# Name:
-# Date:
+# Name: Trey Owen*
+# *I'm partnered with Richard, but he didn't help much. :(
+# Date: July 2017
 
 # proj05: functions and lists
 
 # Part I
 
-def divisors(num):
+num1 = 4
+num2 = 2
+
+
+def divisors(num1, num2):
     """
     Takes a number and returns all divisors of the number, ordered least to greatest
     :param num: int
     :return: list (int)
     """
 
-    # Fill in the function and change the return statment.
-    return 0
+    counter = 0
+    list1 = []
+    answer = 0
+    loop = True
+    answer = 0
+    while loop == True:
+        answer = divisors(num1, num2)
+        counter = counter + 1
+        list1 = answer
+
+
+
+
+
 
 def prime(num):
     """
