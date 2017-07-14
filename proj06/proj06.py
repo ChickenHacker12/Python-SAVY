@@ -45,42 +45,61 @@ def choose_word(wordlist):
 # in the program
 wordlist = load_words()
 a = choose_word(wordlist)
+print a
 
 # your code begins here!
-z = "_ "
+blank = 0
+z = "_"
 already_guessed = []
-guesses = 10
+guesses = 15
 word = []
 spaces = []
 for letter in a:
     word.append(letter)
+    spaces.append("_")
 
 print "\nWelcome to HangmanPro! By Zeke Cook & Trey Owen."
 eeee = raw_input("Press ENTER")
 print ""
+print 'PLEASE, do not type whole words, this program will read it as incorrect.\nThanks,\ncreators.\n'
 
 
 loop_control = True
 
 while loop_control == True:
 
-    word.append(random)
+
+
     # Print spaces
-    spaces = len(word)
-    spaces2 = spaces*z
-    space_list = [spaces2]
-    print space_list
-    print word
+
+    print spaces
+    # print word
     # Question & info
     print "\nNumber of guesses left: ", guesses
     print "Letters guessed: ", already_guessed
 
-    user_guess = raw_input("What letter would you like to guess: ")
+    user_guess = raw_input("What letter would you like to guess: \n")
+
+
+
     if user_guess in word:
         print "\nThat is correct! There is a(n)", user_guess, "."
+
+        # Insert
+        looop = True
+        spaces_counter = 0
+
+        while spaces_counter < len(word):
+            if user_guess in word[spaces_counter]:
+                # Co
+                spaces[spaces_counter] = user_guess
+            spaces_counter = spaces_counter + 1
     elif guesses == 1:
         loop_control = False
         print "\nSorry, you ran out of guesses. Please try again."
+        print word
     else:
         guesses = guesses - 1
         print "\nSorry, inncorrect."
+
+        already_guessed.append(user_guess)
