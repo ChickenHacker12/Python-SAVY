@@ -45,7 +45,7 @@ def choose_word(wordlist):
 # in the program
 wordlist = load_words()
 a = choose_word(wordlist)
-print a
+
 
 # your code begins here!
 blank = 0
